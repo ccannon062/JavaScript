@@ -35,7 +35,7 @@ class Field {
 
     for (let i = 0; i < height; i++) {
       for (let j = 0; j < width; j++) {
-        if ((i !== 0 || j !== 0) && (i !== hatRow || j !== hatCol)) {  // Avoid starting position and hat
+        if ((i !== 0 || j !== 0) && (i !== hatRow || j !== hatCol)) {
           if (Math.random() * 100 < holePercentage) {
             this._field[i][j] = hole;
           }
